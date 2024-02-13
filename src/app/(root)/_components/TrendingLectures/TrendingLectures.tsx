@@ -18,17 +18,4 @@ function TrendingLectures() {
   return <LectureCardsList title="Trending" lectures={lectures || []} />;
 }
 
-// async function getLectureS() {
-//   const response = await fetch("", {
-//     next: { revalidate: 60 },
-//   });
-//   const data = await response.json();
-//   return data;
-// }
-
-// async function TrendingLectures() {
-//   const lectures = await getLectureS();
-//   return <LectureCardsList title="Trending" lectures={lectures || []} />;
-// }
-
 export default TrendingLectures;

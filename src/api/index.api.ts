@@ -15,4 +15,15 @@ class API {
   }
 }
 
+export async function getBrands() {
+  const url =
+    "https://port-0-express-server-17xco2nlsidlckv.sel5.cloudtype.app ";
+  const options = { method: "GET" };
+
+  const response = await fetch(url, options);
+  const data = await response.json();
+
+  return data;
+}
+
 export default API;
